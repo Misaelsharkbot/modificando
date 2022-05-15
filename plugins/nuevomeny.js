@@ -1,3 +1,5 @@
+/*
+
 //PARA USUARIOS DE WHATSAPP BUSSINES
 //UTILIZAR EL SEGUNDO MENÚ
 //CREADO POR GATA DIOS | HYZER 
@@ -555,3 +557,5 @@ function ucapan() {
   }
   return res
 }
+
+*/
