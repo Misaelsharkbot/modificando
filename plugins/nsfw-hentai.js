@@ -17,7 +17,7 @@ handler.help = ['hentai']
 handler.tags = ['nsfw']
 handler.command = ['hentai']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
