@@ -1,0 +1,70 @@
+{
+  "creds": {
+    "noiseKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "qNbfPR6XNpX/bHK3aImfTfOWvdxJK27Th1+go16/lE8="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "7cvCayjwzEO9xvAa3ItndR/DSMvNEPSRojAxeYn+2U4="
+      }
+    },
+    "signedIdentityKey": {
+      "private": {
+        "type": "Buffer",
+        "data": "+Bs8a7PV0lJcpyYgv8lSooz6lNY3vLFMPS3df6PZvXo="
+      },
+      "public": {
+        "type": "Buffer",
+        "data": "SBEU319c4KDaqteabadQnZblFrjokuz5ATWbyC8jUg0="
+      }
+    },
+    "signedPreKey": {
+      "keyPair": {
+        "private": {
+          "type": "Buffer",
+          "data": "aIE/uRp2PaOGn8L7zd4dDnxBb0J6hZ1XnVx7UjdgzUc="
+        },
+        "public": {
+          "type": "Buffer",
+          "data": "8Cu7wgdouDiybsbKfJ+akMB5GNbB5BG0St1vXxr2k2Q="
+        }
+      },
+      "signature": {
+        "type": "Buffer",
+        "data": "fNXm6ELsuqIRGVt8+QE9E2SZdf4g3GF8NPEL/f95mBG2UuQKdq7lduy1PS2EidugMWVzzTJC6StavysFQg08jw=="
+      },
+      "keyId": 1
+    },
+    "registrationId": 159,
+    "advSecretKey": "vawgYSh7FagbgmI3CsXW2xZOtEnrQhEF1AP8jxdsn7U=",
+    "nextPreKeyId": 1,
+    "firstUnuploadedPreKeyId": 1,
+    "accountSettings": {
+      "unarchiveChats": false
+    },
+    "account": {
+      "details": "CMKWx8gBEPaVhpQGGAE=",
+      "accountSignature": "Y0Bkj739Yhhl96QwSLp4d/jIgqWT53170zVovpFFK+h1bw0pCZeawwdiXeEfxhtdVRPQXa+xHOfn6tZrO0C0Cg==",
+      "deviceSignature": "VZt+wNO4e33Cw2jCLg+t+Kvt3BGKWms9IhhBQ4+IR8iyBITlSa/FGexOqHTd0CJLQ4BPG1n66J7BTKRYCZR4gw=="
+    },
+    "me": {
+      "id": "56932892986:21@s.whatsapp.net"
+    },
+    "signalIdentities": [
+      {
+        "identifier": {
+          "name": "56932892986:21@s.whatsapp.net",
+          "deviceId": 0
+        },
+        "identifierKey": {
+          "type": "Buffer",
+          "data": "BVpKunOdvfPAZVBW0Bjtm1O9uM1LhvMHxTioBjAKuDQo"
+        }
+      }
+    ],
+    "platform": "android"
+  },
+  "keys": {}
+}
