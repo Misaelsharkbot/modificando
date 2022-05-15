@@ -17,7 +17,7 @@ handler.help = ['ass']
 handler.tags = ['nsfw']
 handler.command = ['ass', 'culo', 'culos']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
