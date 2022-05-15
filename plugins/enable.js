@@ -128,6 +128,13 @@ sections }
       }
       chat.antiLink = isEnable
       break
+    case 'autosticker':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+           }}
+    chat.autosticker = isEnable 
       
       case 'nsfw':
       case '+18':
