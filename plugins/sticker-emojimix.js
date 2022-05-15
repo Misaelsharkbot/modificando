@@ -11,7 +11,7 @@ let stiker = await sticker(false, res.url, global.packname, global.author)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }}
 handler.help = ['emojimix'].map(v => v + ' emot1|emot2>')
-handler.tags = ['fun']
+handler.tags = ['sticker']
 handler.command = /^(emojimix)$/i
 export default handler
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {
