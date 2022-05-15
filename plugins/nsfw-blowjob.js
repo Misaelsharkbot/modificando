@@ -14,7 +14,7 @@ handler.help = ['blowjob']
 handler.tags = ['nsfw']
 handler.command = ['blowjob']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
