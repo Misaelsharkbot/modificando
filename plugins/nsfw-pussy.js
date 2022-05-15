@@ -17,7 +17,7 @@ handler.help = ['pussy']
 handler.tags = ['nsfw']
 handler.command = ['pussy']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
