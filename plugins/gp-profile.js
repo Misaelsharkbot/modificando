@@ -32,7 +32,7 @@ let str = `
 ▢ *📇 Registrado :* ${registered ? 'Si': 'No'}
 ▢ *⭐ Premium* : ${prem ? 'Si' : 'No'}
 └──────────────`
-conn.sendButton(m.chat, str, igfg, await(await fetch(pp)).buffer(), [['👍🏻', ' '], ['🖤', ' ']], m)
+conn.sendButton(m.chat, str, igfg, await(await fetch(pp)).buffer(), [['\n\nSoy guapo😎', ' '], ['\n\nSoy feo😪', ' ']], m)
 /*
   let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { contextInfo: { mentionedJid }})
