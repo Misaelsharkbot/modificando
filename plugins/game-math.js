@@ -16,7 +16,15 @@ _📌Ejemplo : ${usedPrefix+command} normal_
 
 _📌Ejemplo : ${usedPrefix+command} normal_
 `.trim()
-    
+  if (args.length < 1) return conn.sendHydrated(m.chat, mat, author, null, null, null, null, null, [
+['𝐅𝐚𝐜𝐢𝐥', `${usedPrefix + command} facil`], 
+['𝐍𝐨𝐫𝐦𝐚𝐥', `${usedPrefix + command} normal`], 
+['𝐃𝐢𝐟𝐢𝐜𝐢𝐥', `${usedPrefix + command} dificil`]], m)
+let mode = args[0].toLowerCase()
+if (!(mode in modes)) return conn.sendHydrated(m.chat, mat, author, null, null, null, null, null, [
+['𝐅𝐚𝐜𝐢𝐥', `${usedPrefix + command} facil`], 
+['𝐍𝐨𝐫𝐦𝐚𝐥', `${usedPrefix + command} normal`], 
+['𝐃𝐢𝐟𝐢𝐜𝐢𝐥', `${usedPrefix + command} dificil`]], m)
   let id = m.chat
     if (id in conn.math) return conn.reply(m.chat, '⚠️ Todavía hay preguntas sin respuesta en este chat', conn.math[id][0])
     let math = genMath(mode)
