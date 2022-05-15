@@ -15,7 +15,7 @@ handler.help = ['lesbian']
 handler.tags = ['nsfw']
 handler.command = ['lesbians', 'lesbianas', 'lesbian']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
