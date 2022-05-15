@@ -13,5 +13,5 @@ handler.help = ['pack']
 handler.tags = ['nsfw']
 handler.command = ['pack', 'cosplay']
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler
