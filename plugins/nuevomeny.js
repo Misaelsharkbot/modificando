@@ -468,7 +468,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            imageMessage: message.imageMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
-           hydratedButtons: [{*/
+           hydratedButtons: [{* /
             urlButton: {
                displayText: '𝙂𝙞𝙩𝙃𝙪𝙗',
                url: 'https://github.com/GataNina-Li/GataBot-MD'	       
