@@ -15,8 +15,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ▢ 🔗 *Url:* ${url}
 └──────────────
   `.trim(), igfg, thumbnail, 'https://youtube.com/fg98f', 'YouTube', null, null, [
-    ['🎶 MP3', `${usedPrefix}yta ${url} yes`],
-    ['🎥 MP4', `${usedPrefix}ytv ${url} yes`]
+    ['🎥 MP4 360p', `${usedPrefix}ytv ${url} yes`],
+    ['🎥 MP4 720p', `${usedPrefix}ytv720 ${url} yes`],
+    ['🎶 MP3', `${usedPrefix}yta ${url} yes`]
   ], m)
 }
 handler.help = ['play']
