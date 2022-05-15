@@ -21,7 +21,7 @@ handler.help = ['boobs']
 handler.tags = ['nsfw']
 handler.command = ['tetas', 'boobies', 'boobs']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 
 
