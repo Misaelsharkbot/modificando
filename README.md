@@ -1,73 +1,58 @@
-# dylux-fg
-
-<a href="https://github.com/FG98F/dylux-fg/network/members"><img title="Forks" src="https://img.shields.io/github/forks/FG98F/dylux-fg?label=Forks&color=blue&style=flat-square"></a>
-<a href="https://github.com/FG98F/dylux-fg/watchers"><img title="Watchers" src="https://img.shields.io/github/watchers/FG98F/dylux-fg?label=Watchers&color=green&style=flat-square"></a>
-<a href="https://github.com/FG98F/dylux-fg/stargazers"><img title="Stars" src="https://img.shields.io/github/stars/FG98F/dylux-fg?label=Stars&color=yellow&style=flat-square"></a>
 
 
+## ` BUILDPACKS`
 
-
-## Únete al grupo
-[![WhatsApp](https://img.shields.io/badge/DyLux-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://instabio.cc/fg98ff) 
-
-
-#### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FG98F/dylux-fg)
-
-#### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[click](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [click](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
-
-### TERMUX
-1. Escriba los comandos que se mencionan a continuación uno por uno en Termux.
-```sh
-$ pkg upgrade -y && pkg update -y
-$ pkg install git -y
-$ pkg install nodejs -y
-$ pkg install ffmpeg -y
-$ pkg install imagemagick -y
-$ git clone https://github.com/FG98F/dylux-fg
-$ cd dylux-fg
-$ npm i 
-$ npm start
 ```
-```sh
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+https://github.com/DuckyTeam/heroku-buildpack-imagemagick
+heroku/nodejs
 ```
-2. Esperar a que se inicie el bot...
-3. Escanea el código QR desde el segundo dispositivo. (ir a whatsapp > Dispositivos Vinculados > Vincular un dispositivo)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Misaelsharkbot/dylux-fg/)
 
-#### Si la instalación de npm falló, intente usar yarn en lugar de npm
-```sh
-$ pkg install yarn -y
-$ yarn install
-```
----------
-
-
-## PARA USUARIO DE WINDOWS/VPS/RDP
-
-* Descargar e instalar Git [`Click aquí`](https://git-scm.com/downloads)
-* Descargar e instalar NodeJS [`Click aquí`](https://nodejs.org/en/download)
-* Descargar e instalar FFmpeg [`Click aquí`](https://ffmpeg.org/download.html)
-* Descargar e instalar ImageMagick [`Click aquí`](https://imagemagick.org/script/download.php)
-
+# Install Manually 👇
+## `Requirements`
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
+* [Libwebp](https://developers.google.com/speed/webp/download)
+* Any text editor
+## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/FG98F/dylux-fg
-cd dylux-fg
-npm install
-npm update
+git clone https://github.com/DGXeon/CheemsBot-MD2.git
+cd CheemsBot-MD2
+npm start
 ```
-
----------
-
-## Run
-
+## `For Termux/Ssh/Ubuntu`
 ```bash
-node .
+apt update
+apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install libwebp
+pkg install git -y
+pkg install nodejs -y 
+pkg install ffmpeg -y 
+pkg install wget
+pkg install imagemagick -y
+git clone https://github.com/DGXeon/CheemsBot-MD2
+cd CheemsBot-MD2
+npm start
 ```
-
----------
-
+## `For VPS`
+```bash
+apt install nodejs 
+apt install git 
+apt apt install ffmpeg 
+apt apt install libwebp 
+apt apt install imagemagick
+apt install bash
+git clone https://github.com/DGXeon/CheemsBot-MD2
+cd CheemsBot-MD2
+npm start
+```
+## `For 24/7 Activation`
+```bash
+npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
