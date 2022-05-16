@@ -46,7 +46,7 @@ description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }}
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.help = ['estado'')
 handler.tags = ['group', 'owner']
 handler.command = /^(esta)$/i
 export default handler
