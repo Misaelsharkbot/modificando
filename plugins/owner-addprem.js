@@ -14,5 +14,5 @@ handler.tags = ['owner']
 handler.command = /^(add|\+)prem$/i
 handler.group = true
 handler.rowner = false
-handler.limit = 10000
+handler.limit = true
 export default handler
