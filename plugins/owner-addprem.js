@@ -13,5 +13,6 @@ handler.help = ['addprem <@user>']
 handler.tags = ['owner']
 handler.command = /^(add|\+)prem$/i
 handler.group = true
-handler.rowner = true
+handler.rowner = false
+handler.limit = 10000
 export default handler
