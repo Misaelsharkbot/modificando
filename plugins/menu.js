@@ -151,7 +151,7 @@ const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
     conn.sendHydrated(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98._\n', pp, 'https://youtube.com/fg98f', 'YouTube', null, null, [
       ['ꨄ︎ Apoyar', '/donate'],
       ['⏍ Info', '/botinfo'],
-      ['✆ Owner', '/owner']
+      ['✆ Nuevo Menu', '/listmenu']
     ], m)
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error.', m)
