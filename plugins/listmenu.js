@@ -70,60 +70,40 @@ rows: [
 {title: "🎼 | 𝐋𝐲𝐫𝐢𝐜𝐬", description: "", rowId: `${usedPrefix}lyrics`},
 {title: "💠 | 𝐐𝐑𝐜𝐨𝐝𝐞", description: "", rowId: `${usedPrefix}qrcode`},
 {title: "💠 | 𝐥𝐞𝐞𝐫𝐦𝐚𝐬", description: "", rowId: `${usedPrefix}leermas`},
-{title: " | 𝐑𝐞𝐚𝐝𝐯𝐨", description: "", rowId: `${usedPrefix}readvo`},
-{title: " | 𝐭𝐭𝐬", description: "", rowId: `${usedPrefix}tts`},
-{title: " | 𝐂𝐚𝐥", description: "", rowId: `${usedPrefix}cal`},
-{title: " | 𝐓𝐫𝐚𝐝", description: "", rowId: `${usedPrefix}trad`},
-{title: " | 𝐖𝐢𝐤𝐢𝐩𝐞𝐝𝐢𝐚", description: "", rowId: `${usedPrefix}wikipedia`},
-{title: " | 𝐘𝐭𝐬𝐞𝐚𝐫𝐜𝐡", description: "", rowId: `${usedPrefix}ytsearch`},
-{title: " | 𝐀𝐟𝐤", description: "", rowId: `${usedPrefix}afk`},
-{title: " | 𝐓𝐨𝐦𝐩𝟑", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐓𝐨𝐚𝐯", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐆𝐚𝐲", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐏𝐫𝐞𝐠𝐮𝐧𝐭𝐚", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐭𝐱𝐭", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐭𝐱𝐭𝟐", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐋𝐨𝐠𝐨𝐬", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐥𝐨𝐯𝐞", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐅𝐨𝐫𝐦𝐚𝐫𝐩𝐚𝐫𝐞𝐣𝐚", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐝𝐞𝐥𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐥𝐢𝐬𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐬𝐞𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐀𝐒𝐒", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐁𝐥𝐨𝐰𝐣𝐨𝐛", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐁𝐨𝐨𝐛𝐬", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐏𝐚𝐜𝐤", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐇𝐞𝐧𝐭𝐚𝐢", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐋𝐞𝐬𝐛𝐢𝐚𝐧", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐏𝐮𝐬𝐬𝐲", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐁𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐔𝐧𝐛𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
-{title: " | 𝐑𝐞𝐢𝐧𝐢𝐜𝐢𝐚𝐫", description: "", rowId: `${usedPrefix}`},
+{title: "💠 | 𝐑𝐞𝐚𝐝𝐯𝐨", description: "", rowId: `${usedPrefix}readvo`},
+{title: "🎙 | 𝐭𝐭𝐬", description: "", rowId: `${usedPrefix}tts`},
+{title: "➕ | 𝐂𝐚𝐥", description: "", rowId: `${usedPrefix}cal`},
+{title: "⚜ | 𝐓𝐫𝐚𝐝", description: "", rowId: `${usedPrefix}trad`},
+{title: "🔍 | 𝐖𝐢𝐤𝐢𝐩𝐞𝐝𝐢𝐚", description: "", rowId: `${usedPrefix}wikipedia`},
+{title: "🔍 | 𝐘𝐭𝐬𝐞𝐚𝐫𝐜𝐡", description: "", rowId: `${usedPrefix}ytsearch`},
+{title: "⚠ | 𝐀𝐟𝐤", description: "", rowId: `${usedPrefix}afk`},
+{title: "🎧 | 𝐓𝐨𝐦𝐩𝟑", description: "", rowId: `${usedPrefix}`},
+{title: "💠 | 𝐓𝐨𝐚𝐯", description: "", rowId: `${usedPrefix}`},
+{title: "🤢 | 𝐆𝐚𝐲", description: "", rowId: `${usedPrefix}`},
+{title: "🤔 | 𝐏𝐫𝐞𝐠𝐮𝐧𝐭𝐚", description: "", rowId: `${usedPrefix}`},
+{title: "📄 | 𝐭𝐱𝐭", description: "", rowId: `${usedPrefix}`},
+{title: "📄 | 𝐭𝐱𝐭𝟐", description: "", rowId: `${usedPrefix}`},
+{title: "🔠 | 𝐋𝐨𝐠𝐨𝐬", description: "", rowId: `${usedPrefix}`},
+{title: "❣ | 𝐥𝐨𝐯𝐞", description: "", rowId: `${usedPrefix}`},
+{title: "💖 | 𝐅𝐨𝐫𝐦𝐚𝐫𝐩𝐚𝐫𝐞𝐣𝐚", description: "", rowId: `${usedPrefix}`},
+{title: "🛠 | 𝐝𝐞𝐥𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
+{title: "🛠 | 𝐥𝐢𝐬𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
+{title: "🛠 | 𝐬𝐞𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐀𝐒𝐒", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐁𝐥𝐨𝐰𝐣𝐨𝐛", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐁𝐨𝐨𝐛𝐬", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐏𝐚𝐜𝐤", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐇𝐞𝐧𝐭𝐚𝐢", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐋𝐞𝐬𝐛𝐢𝐚𝐧", description: "", rowId: `${usedPrefix}`},
+{title: "🥵 | 𝐏𝐮𝐬𝐬𝐲", description: "", rowId: `${usedPrefix}`},
+{title: "😎 | 𝐁𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
+{title: "😎 | 𝐔𝐧𝐛𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
+{title: "😎 | 𝐑𝐞𝐢𝐧𝐢𝐜𝐢𝐚𝐫", description: "", rowId: `${usedPrefix}`},
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
-footer: `≡ Lista de Opciones
-┌─⊷ *LISTA*
-▢ welcome 
-▢ delete 
-▢ public 
-▢ antilink
-▢ nsfw
-▢ antidelete
-▢ autolevelup 
-▢ detect 
-▢ document 
-▢ restrict 
-▢ autoread 
-▢ autosticker
-▢ solopv
-▢ sologp
-└─────────────
-*📌 Ejemplo :*
-*${usedPrefix}enable* welcome
-*${usedPrefix}disable* welcome
-${author}`,
+footer: `*DyLux  ┃ ᴮᴼᵀ*`,
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
