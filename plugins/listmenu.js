@@ -2,46 +2,46 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 const sections = [
 {
-  title: `*DyLux  ┃ ᴮᴼᵀ*`,
+   title: `DyLux  ┃ ᴮᴼᵀ`,
 rows: [
-{title: "👨‍🔬 | 𝐂𝐫𝐞𝐚𝐝𝐨𝐫", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙰 𝙴𝙽 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}owner`},
-{title: "⛑ | 𝐃𝐨𝐧𝐚𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙴 𝚅𝚄𝙴𝙻𝚅𝙴 𝙳𝙴 𝚄𝚂𝙾 𝙿𝚄𝙱𝙻𝙸𝙲𝙾 𝚈/𝙾 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix}donar`},
-{title: "🤖 | 𝐁𝐨𝐭", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾", rowId: `${usedPrefix}bot`},
-{title: "👨‍👩‍👧‍👦 | 𝐆𝐫𝐮𝐩𝐨𝐬", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙰𝙽𝚃𝙸 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂 𝙳𝙴 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿", rowId: `${usedPrefix}gpdylux`},   
-{title: "⚜ | 𝐌𝐞𝐧𝐮", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙲𝙸𝙾𝙽 𝙳𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙴𝙽 𝙴𝙻 𝙶𝚁𝚄𝙿𝙾𝚂", rowId: `${usedPrefix}menu`},    
-{title: "⚜ | 𝐌𝐞𝐧𝐮𝟐", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰𝚂 𝙽𝙾𝚃𝙸𝙵𝙸𝙲𝙰𝙲𝙸𝙾𝙽𝙴𝚂 𝙳𝙴 𝙽𝚄𝙴𝚅𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙲𝙸𝙾𝙽 𝙴𝙽 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}menu2`},      
-{title: "💾 | 𝐒𝐂", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙻𝙰𝚂 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝙲𝙸𝙾𝙽𝙴𝚂 𝙿𝙰𝚁𝙰 𝚂𝙰𝙲𝙰𝚁 𝙶𝙴𝙽𝚃𝙴 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂", rowId: `${usedPrefix}scrip`},    
-{title: "🛠 | 𝐈𝐧𝐟𝐨", description: "𝙰𝙲𝚃𝙸𝚅𝙰 𝙾 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰 𝙴𝙻 𝙼𝙾𝙳𝙾 𝚀𝚄𝙴 𝚂𝙴 𝙴𝙽𝚅𝙸𝙰 𝙴𝙻 𝚅𝙸𝙳𝙴𝙾 𝙾 𝙻𝙰 𝙼𝚄𝚂𝙸𝙲𝙰", rowId: `${usedPrefix}info`},
-{title: "🎲 | 𝐃𝐚𝐝𝐨", description: "𝙼𝙰𝚁𝙲𝙰 𝙰𝚄𝚃𝙾𝙼𝙰𝚃𝙸𝙲𝙰𝙼𝙴𝙽𝚃𝙴 𝙻𝙰𝚂 𝙲𝙾𝙽𝚅𝙴𝚁𝚂𝙰𝙲𝙸𝙾𝙽𝙴𝚂 𝙲𝙾𝙼𝙾 𝙻𝙴𝙸𝙳𝙾", rowId: `${usedPrefix}dado`},
-{title: "✊ | 𝐏𝐏𝐓", description: "𝚃𝙾𝙳𝙰𝚂 𝙻𝙰𝚂 𝙸𝙼𝙰𝙶𝙴𝙽𝙴𝚂, 𝚅𝙸𝙳𝙴𝙾𝚂 𝙾 𝙴𝙽𝙻𝙰𝙲𝙴𝚂 𝙴𝙽𝚅𝙸𝙰𝙳𝙾𝚂 𝚂𝙴 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝙽 𝙴𝙽 𝚂𝚃𝙸𝙲𝙺𝙴𝚁", rowId: `${usedPrefix }ppt`},
-{title: "⭕ | 𝐓𝐢𝐜𝐭𝐚𝐜𝐭𝐨𝐞", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}ttt a`},
-{title: "🎰 | 𝐒𝐥𝐨𝐭", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}slot`},  
-{title: "➗ | 𝐌𝐚𝐭𝐞𝐬", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙲𝙷𝙰𝚃 𝙿𝚁𝙸𝚅𝙰𝙳𝙾", rowId: `${usedPrefix}mates`},
-{title: "💹 | 𝐋𝐞𝐯𝐞𝐥𝐮𝐩", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}nivel`},
-{title: "💎 | 𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐬", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}bal`},
-{title: "💰 | 𝐂𝐥𝐚𝐢𝐦", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}claim`},
-{title: "⛏ | 𝐌𝐢𝐧𝐚𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}minar`},
-{title: "🥇 | 𝐓𝐨𝐩", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}top`},
-{title: "💸 | 𝐁𝐮𝐲", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}buy`},
-{title: "💱 | 𝐁𝐮𝐲𝐚𝐥𝐥", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}buyall`},
-{title: "🏦 | 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}transfer`},
-{title: "👷‍♂️ | 𝐓𝐫𝐚𝐛𝐚𝐣𝐚𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}w`},
-{title: "🏢 | 𝐄𝐦𝐨𝐣𝐢𝐦𝐢𝐱", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}emojimix`},
-{title: "🏢 | 𝐄𝐦𝐨𝐣𝐢𝐦𝐢𝐱𝟐", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}emojimix2`},
-{title: "Ⓜ | 𝐀𝐭𝐭𝐩", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}attp`},
-{title: "Ⓜ | 𝐓𝐭𝐩", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}ttp`},
-{title: "🤔 | 𝐆𝐞𝐭𝐞𝐱𝐢𝐟", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}getexif`},
-{title: "👄 | 𝐁𝐞𝐬𝐨", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}kiss`},
-{title: "🥺 | 𝐏𝐚𝐥𝐦𝐚𝐝𝐢𝐭𝐚𝐬", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}pat`},
-{title: "💠 | 𝐑𝐞𝐚𝐜𝐭", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}react`},
-{title: "💠 | 𝐒𝐭𝐢𝐜𝐤𝐞𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}s`},
-{title: "📄 | 𝐓𝐨𝐢𝐦𝐠", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}toimg`},
-{title: "📄 | 𝐓𝐨𝐢𝐦𝐠𝟐", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}toimg2`},
-{title: "🏃‍♂️ | 𝐑𝐨𝐛𝐚𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}wm`},
-{title: "🔍 | 𝐈𝐦𝐚𝐠𝐞𝐧", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}imagen`},
-{title: "🅿 | 𝐏𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}pinterest`},
-{title: "👩 | 𝐆𝐢𝐫𝐥", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}girl`},
-{title: "🖼 | 𝐖𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫", description: "𝙴𝙻 𝙱𝙾𝚃 𝚂𝙾𝙻𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁𝙰 𝙰 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚂𝙸 𝙴𝚂 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾", rowId: `${usedPrefix}wallpaper`},
+{title: "👨‍🔬 | 𝐂𝐫𝐞𝐚𝐝𝐨𝐫", description: "", rowId: `${usedPrefix}owner`},
+{title: "⛑ | 𝐃𝐨𝐧𝐚𝐫", description: "", rowId: `${usedPrefix}donar`},
+{title: "🤖 | 𝐁𝐨𝐭", description: "", rowId: `${usedPrefix}bot`},
+{title: "👨‍👩‍👧‍👦 | 𝐆𝐫𝐮𝐩𝐨𝐬", description: "", rowId: `${usedPrefix}gpdylux`},   
+{title: "⚜ | 𝐌𝐞𝐧𝐮", description: "", rowId: `${usedPrefix}menu`},    
+{title: "⚜ | 𝐌𝐞𝐧𝐮𝟐", description: "", rowId: `${usedPrefix}menu2`},      
+{title: "💾 | 𝐒𝐂", description: "", rowId: `${usedPrefix}scrip`},    
+{title: "🛠 | 𝐈𝐧𝐟𝐨", description: "", rowId: `${usedPrefix}info`},
+{title: "🎲 | 𝐃𝐚𝐝𝐨", description: "", rowId: `${usedPrefix}dado`},
+{title: "✊ | 𝐏𝐏𝐓", description: "", rowId: `${usedPrefix }ppt`},
+{title: "⭕ | 𝐓𝐢𝐜𝐭𝐚𝐜𝐭𝐨𝐞", description: "", rowId: `${usedPrefix}ttt a`},
+{title: "🎰 | 𝐒𝐥𝐨𝐭", description: "", rowId: `${usedPrefix}slot`},  
+{title: "➗ | 𝐌𝐚𝐭𝐞𝐬", description: "", rowId: `${usedPrefix}mates`},
+{title: "💹 | 𝐋𝐞𝐯𝐞𝐥𝐮𝐩", description: "", rowId: `${usedPrefix}nivel`},
+{title: "💎 | 𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐬", description: "", rowId: `${usedPrefix}bal`},
+{title: "💰 | 𝐂𝐥𝐚𝐢𝐦", description: "", rowId: `${usedPrefix}claim`},
+{title: "⛏ | 𝐌𝐢𝐧𝐚𝐫", description: "", rowId: `${usedPrefix}minar`},
+{title: "🥇 | 𝐓𝐨𝐩", description: "", rowId: `${usedPrefix}top`},
+{title: "💸 | 𝐁𝐮𝐲", description: "", rowId: `${usedPrefix}buy`},
+{title: "💱 | 𝐁𝐮𝐲𝐚𝐥𝐥", description: "", rowId: `${usedPrefix}buyall`},
+{title: "🏦 | 𝐓𝐫𝐚𝐧𝐬𝐟𝐞𝐫", description: "", rowId: `${usedPrefix}transfer`},
+{title: "👷‍♂️ | 𝐓𝐫𝐚𝐛𝐚𝐣𝐚𝐫", description: "", rowId: `${usedPrefix}w`},
+{title: "🏢 | 𝐄𝐦𝐨𝐣𝐢𝐦𝐢𝐱", description: "", rowId: `${usedPrefix}emojimix`},
+{title: "🏢 | 𝐄𝐦𝐨𝐣𝐢𝐦𝐢𝐱𝟐", description: "", rowId: `${usedPrefix}emojimix2`},
+{title: "Ⓜ | 𝐀𝐭𝐭𝐩", description: "", rowId: `${usedPrefix}attp`},
+{title: "Ⓜ | 𝐓𝐭𝐩", description: "", rowId: `${usedPrefix}ttp`},
+{title: "🤔 | 𝐆𝐞𝐭𝐞𝐱𝐢𝐟", description: "", rowId: `${usedPrefix}getexif`},
+{title: "👄 | 𝐁𝐞𝐬𝐨", description: "", rowId: `${usedPrefix}kiss`},
+{title: "🥺 | 𝐏𝐚𝐥𝐦𝐚𝐝𝐢𝐭𝐚𝐬", description: "", rowId: `${usedPrefix}pat`},
+{title: "💠 | 𝐑𝐞𝐚𝐜𝐭", description: "", rowId: `${usedPrefix}react`},
+{title: "💠 | 𝐒𝐭𝐢𝐜𝐤𝐞𝐫", description: "", rowId: `${usedPrefix}s`},
+{title: "📄 | 𝐓𝐨𝐢𝐦𝐠", description: "", rowId: `${usedPrefix}toimg`},
+{title: "📄 | 𝐓𝐨𝐢𝐦𝐠𝟐", description: "", rowId: `${usedPrefix}toimg2`},
+{title: "🏃‍♂️ | 𝐑𝐨𝐛𝐚𝐫", description: "", rowId: `${usedPrefix}wm`},
+{title: "🔍 | 𝐈𝐦𝐚𝐠𝐞𝐧", description: "", rowId: `${usedPrefix}imagen`},
+{title: "🅿 | 𝐏𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭", description: "", rowId: `${usedPrefix}pinterest`},
+{title: "👩 | 𝐆𝐢𝐫𝐥", description: "", rowId: `${usedPrefix}girl`},
+{title: "🖼 | 𝐖𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫", description: "", rowId: `${usedPrefix}wallpaper`},
 {title: "🎞 | 𝐏𝐞𝐫𝐟𝐢𝐥", description: "", rowId: `${usedPrefix}perfil`},
 {title: "🛑 | 𝐒𝐢𝐦𝐮𝐥𝐚𝐫", description: "", rowId: `${usedPrefix}simular`},
 {title: "🤵 | 𝐒𝐭𝐚𝐟𝐟", description: "", rowId: `${usedPrefix}staff`},
@@ -86,9 +86,6 @@ rows: [
 {title: "🔠 | 𝐋𝐨𝐠𝐨𝐬", description: "", rowId: `${usedPrefix}`},
 {title: "❣ | 𝐥𝐨𝐯𝐞", description: "", rowId: `${usedPrefix}`},
 {title: "💖 | 𝐅𝐨𝐫𝐦𝐚𝐫𝐩𝐚𝐫𝐞𝐣𝐚", description: "", rowId: `${usedPrefix}`},
-{title: "🛠 | 𝐝𝐞𝐥𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
-{title: "🛠 | 𝐥𝐢𝐬𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
-{title: "🛠 | 𝐬𝐞𝐭𝐜𝐦𝐝", description: "", rowId: `${usedPrefix}`},
 {title: "🥵 | 𝐀𝐒𝐒", description: "", rowId: `${usedPrefix}`},
 {title: "🥵 | 𝐁𝐥𝐨𝐰𝐣𝐨𝐛", description: "", rowId: `${usedPrefix}`},
 {title: "🥵 | 𝐁𝐨𝐨𝐛𝐬", description: "", rowId: `${usedPrefix}`},
@@ -96,14 +93,31 @@ rows: [
 {title: "🥵 | 𝐇𝐞𝐧𝐭𝐚𝐢", description: "", rowId: `${usedPrefix}`},
 {title: "🥵 | 𝐋𝐞𝐬𝐛𝐢𝐚𝐧", description: "", rowId: `${usedPrefix}`},
 {title: "🥵 | 𝐏𝐮𝐬𝐬𝐲", description: "", rowId: `${usedPrefix}`},
-{title: "😎 | 𝐁𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
-{title: "😎 | 𝐔𝐧𝐛𝐚𝐧𝐜𝐡𝐚𝐭", description: "", rowId: `${usedPrefix}`},
-{title: "😎 | 𝐑𝐞𝐢𝐧𝐢𝐜𝐢𝐚𝐫", description: "", rowId: `${usedPrefix}`},
 ]}, ]
 let name = await conn.getName(m.sender)
 const listMessage = {
 text: ' ',
-footer: `*DyLux  ┃ ᴮᴼᵀ*`,
+footer: `≡ Lista de Opciones
+┌─⊷ *LISTA*
+▢ welcome 
+▢ delete 
+▢ public 
+▢ antilink
+▢ nsfw
+▢ antidelete
+▢ autolevelup 
+▢ detect 
+▢ document 
+▢ restrict 
+▢ autoread 
+▢ autosticker
+▢ solopv
+▢ sologp
+└─────────────
+*📌 Ejemplo :*
+*${usedPrefix}enable* welcome
+*${usedPrefix}disable* welcome
+${author}`,
 title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
@@ -141,24 +155,24 @@ sections }
     //   }
     //   chat.detect = isEnable
     //   break
-   // case 'delete':
-     // if (m.isGroup) {
-       // if (!(isAdmin || isOwner)) {
-//          global.dfail('admin', m, conn)
-  //        throw false
-    //    }
-      // }
-    //  chat.delete = isEnable
-   //   break
-   // case 'antidelete':
-   //   if (m.isGroup) {
-   //     if (!(isAdmin || isOwner)) {
-   //       global.dfail('admin', m, conn)
-   //       throw false
-   //     }
-   //   }
-   //   chat.delete = !isEnable
-   //   break
+    case 'delete':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.delete = isEnable
+      break
+    case 'antidelete':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.delete = !isEnable
+      break
     // case 'autodelvn':
     //   if (m.isGroup) {
     //     if (!(isAdmin || isOwner)) {
@@ -168,48 +182,48 @@ sections }
     //   }
     //   chat.autodelvn = isEnable
     //   break
-  //  case 'document':
-  //  if (m.isGroup) {
-  //      if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
-  //    }
-  //  chat.useDocument = isEnable
-  //  break
-  //  case 'public':
-  //  case 'publico':
-  //    isAll = true
-  //    if (!isROwner) {
-  //      global.dfail('rowner', m, conn)
-  //      throw false
-  //    }
-  //    global.opts['self'] = !isEnable
-   //   break
-   // case 'antilink':
-  //    if (m.isGroup) {
-  //      if (!(isAdmin || isOwner)) {
-  //        global.dfail('admin', m, conn)
-  //        throw false
-  //      }
-  //    }
-  //    chat.antiLink = isEnable
-  //    break
-  //  case 'autosticker':
-  //    if (m.isGroup) {
-  //      if (!(isAdmin || isOwner)) {
-  //        global.dfail('admin', m, conn)
-  //        throw false
-  //         }}
-  //  chat.autosticker = isEnable 
-  //    
-  //    case 'nsfw':
-  //    case '+18':
-   //    if (m.isGroup) {
-   //      if (!(isAdmin || isOwner)) {
-   //        global.dfail('admin', m, conn)
-  //          throw false
-  //         }}
-  //  chat.nsfw = isEnable          
-  //  break
-//
+    case 'document':
+    if (m.isGroup) {
+        if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+      }
+    chat.useDocument = isEnable
+    break
+    case 'public':
+    case 'publico':
+      isAll = true
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
+        throw false
+      }
+      global.opts['self'] = !isEnable
+      break
+    case 'antilink':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLink = isEnable
+      break
+    case 'autosticker':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+           }}
+    chat.autosticker = isEnable 
+      
+      case 'nsfw':
+      case '+18':
+       if (m.isGroup) {
+         if (!(isAdmin || isOwner)) {
+           global.dfail('admin', m, conn)
+            throw false
+           }}
+    chat.nsfw = isEnable          
+    break
+
     // case 'toxic':
     //   if (m.isGroup) {
     //     if (!(isAdmin || isOwner)) {
@@ -228,10 +242,10 @@ sections }
     //   }
     //   chat.antiToxic = isEnable
     //   break
-  //  case 'autolevelup':
-  //  isUser = true
-  //   user.autolevelup = isEnable
-   //  break
+    case 'autolevelup':
+    isUser = true
+     user.autolevelup = isEnable
+     break
     // case 'mycontact':
     // case 'mycontacts':
     // case 'whitelistcontact':
@@ -244,24 +258,24 @@ sections }
     //   }
     //   conn.callWhitelistMode = isEnable
     //   break
-   // case 'restrict':
-   // case 'restringir':
-   //   isAll = true
-   //   if (!isOwner) {
-   //     global.dfail('owner', m, conn)
-   //     throw false
-   //   }
-   //   bot.restrict = isEnable
-   //   break
-   // case 'nyimak':
-  //  case 'escuchar':
-  //    isAll = true
-   //   if (!isROwner) {
-   //     global.dfail('rowner', m, conn)
-    //    throw false
-   //   }
-   //   global.opts['nyimak'] = isEnable
-//  break
+    case 'restrict':
+    case 'restringir':
+      isAll = true
+      if (!isOwner) {
+        global.dfail('owner', m, conn)
+        throw false
+      }
+      bot.restrict = isEnable
+      break
+    case 'nyimak':
+    case 'escuchar':
+      isAll = true
+      if (!isROwner) {
+        global.dfail('rowner', m, conn)
+        throw false
+      }
+      global.opts['nyimak'] = isEnable
+      break
     case 'autoread':
     case 'autoleer':
       isAll = true
@@ -309,8 +323,10 @@ conn.sendButton(m.chat, `🗂️ 𝐎𝐏𝐂𝐈𝐎𝐍: ${type}
 🎚️ 𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? '𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾' : '𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾'}
 📣 𝐏𝐀𝐑𝐀: ${isAll ? '𝙴𝚂𝚃𝙴 𝙱𝙾𝚃' : isUser ? '' : '𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '.menu']],m)}
 
-handler.help = ['listmenu')
+handler.help = ['menu3']
 handler.tags = ['main']
-handler.command = ['listmenu'] 
+handler.command = ['menu3', 'help3', 'menú3'] 
+handler.register = false
+handler.exp = 3
 
 export default handler
