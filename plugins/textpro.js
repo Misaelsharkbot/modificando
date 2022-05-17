@@ -1,7 +1,7 @@
 import axios from 'axios'
 let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
-if (!effect) throw '✳️ FORMATO INCORRECTO\n━✦ _#logo (efecto) (texto)_\n𝙴jemplo:\n━✦ _#logo 3d-deep-sea-metal Misael_\n\n⚠️ Cuando les diga falta exto usa seriea:*\n—◉ _#logo (efecto) (texto1|texto2)_\nEjemplo:\n━✦ _#logo Wolf-Logo-Galaxy Mystic|Bot_\n\n*<𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑬𝑭𝑬𝑪𝑻𝑶𝑺/>*\n\n° │⫹⫺ ⚜ #logo ' + effects.map(v => v.title).join('\n° │⫹⫺ ⚜ #logo ')
+if (!effect) throw '✳️ FORMATO INCORRECTO\n━✦ _#logo (efecto) (texto)_\n𝙴jemplo:\n━✦ _#logo 3d-deep-sea-metal Misael_\n\n⚠️ Cuando les diga falta exto usa seriea:*\n—◉ _#logo (efecto) (texto1|texto2)_\nEjemplo:\n━✦ _#logo Wolf-Logo-Galaxy Dylux|Bot_\n\n*<𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑬𝑭𝑬𝑪𝑻𝑶𝑺/>*\n\n° │⫹⫺  #logo ' + effects.map(v => v.title).join('\n° │⫹⫺  #logo ')
 effect = effect.toLowerCase()
 if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙴𝙵𝙴𝙲𝚃𝙾 ${effect} 𝙽𝙾 𝙴𝚂𝚃𝙰 𝙴𝙽 𝙻𝙰 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙴𝙵𝙴𝙲𝚃𝙾𝚂*`
 let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
