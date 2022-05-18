@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ▢ ⌚ *Duración:* ${durationH}
 ▢ 👀 *Vistas:* ${viewH}
 ▢ 🔗 *Url:* ${url}
-▢ 🔒 *encriptado:* No
+▢ 🔒 *Encriptado:* No
 └──────────────
   `.trim(), igfg, thumbnail, 'https://youtube.com/fg98f', 'YouTube', null, null, [
     ['🎥 MP4', `${usedPrefix}ytv ${url} yes`],
