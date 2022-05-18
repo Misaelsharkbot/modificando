@@ -32,8 +32,9 @@ let str = `
 ▢ *📇 Registrado :* ${registered ? 'Si': 'No'}
 ▢ *⭐ Premium* : ${prem ? 'Si' : 'No'}
 ▢ *🚫 Baneado* : No
+▢ *⚠ Advertencias* : 0/3
 └──────────────`
-conn.sendButton(m.chat, str, igfg, await(await fetch(pp)).buffer(), [['\n\nSoy guapo😎', '.s https://telegra.ph/file/51d0ced0e69012644134b.gif'], ['\n\nSoy feo😪', '.s https://telegra.ph/file/ec5f13d5b557bee4fc561.gif']], m)
+conn.sendButton(m.chat, str, igfg, await(await fetch(pp)).buffer(), [['\n\nSoy guapo😎', '.emojimix2 😂'], ['\n\nSoy feo😪', '.emojimix2 🤣']], m)
 /*
   let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { contextInfo: { mentionedJid }})
