@@ -42,7 +42,7 @@ rows: [
 {title: "👩 | 𝐆𝐢𝐫𝐥", description: "ᴛᴇ ᴍᴜᴇꜱᴛʀᴀ ɪᴍᴀɢᴇɴᴇꜱ ᴅᴇ ᴍᴜᴊᴇʀᴇꜱ", rowId: `${usedPrefix}girl`},
 {title: "🖼 | 𝐖𝐚𝐥𝐥𝐩𝐚𝐩𝐞𝐫", description: "ꜰᴏᴅᴏꜱ ᴅᴇ ᴘᴀɴᴛᴀʟʟᴀ", rowId: `${usedPrefix}wallpaper`},
 {title: "🎞 | 𝐏𝐞𝐫𝐟𝐢𝐥", description: "ᴍᴜᴇꜱᴛʀᴀ ᴛᴜ ᴘᴇʀꜰɪʟ", rowId: `${usedPrefix}perfil`},
-{title: "🛑 | 𝐒𝐢𝐦𝐮𝐥𝐚𝐫", description: "", rowId: `${usedPrefix}simular`},
+{title: "🛑 | 𝐒𝐢𝐦𝐮𝐥𝐚𝐫", description: "ʜᴀᴄᴇʀ ᴜɴᴀ ꜱɪᴍᴜʟᴀᴄɪᴏɴ ᴅᴇ ᴜɴ ᴄᴏᴍᴀɴᴅᴏ", rowId: `${usedPrefix}simular`},
 {title: "🤵 | 𝐒𝐭𝐚𝐟𝐟", description: "ᴀᴅᴍɪɴɪꜱᴛʀᴀᴅᴏʀᴇꜱ ᴅᴇʟ ɢʀᴜᴘᴏ", rowId: `${usedPrefix}staff`},
 {title: "🔁 | 𝐀𝐝𝐝", description: "ᴀɢʀᴇɢᴀʀ ᴀ ᴀʟɢᴜɪᴇɴ ᴀʟ ɢʀᴜᴘᴏ", rowId: `${usedPrefix}infogp`},
 {title: "⁉ | 𝐈𝐧𝐟𝐨𝐠𝐩", description: "ɪᴍꜰᴏʀᴍᴀᴄɪᴏɴ ꜱᴏʙʀᴇ ᴇʟ ɢʀᴜᴘᴏ", rowId: `${usedPrefix}`},
@@ -104,9 +104,9 @@ footer: `────  *DyLux  ┃ ᴮᴼᵀ*  ────
 Qᴜᴇ ᴛᴇɴɢᴀ ꜰᴀʟʟᴏꜱ 
 ɢʀᴀᴄɪᴀꜱ ᴘᴏʀ ᴇɴᴛᴇɴᴇʀ
 └─────────────
-${author}`,
+_*${author}*_`,
 title: null,
-buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
+buttonText: "ᕼᗩGᗩ ᑕᒪIᑕK",
 sections }
 
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
