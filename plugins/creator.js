@@ -1,6 +1,6 @@
 function handler(m) {
-  /*const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)*/
+  const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+  this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
   m.reply(`
 *≡ OWNER*
@@ -8,9 +8,11 @@ function handler(m) {
 ▢ Instagram :
   • https://instagram.com/fg98._
 ▢ WhatsApp :
-  • wa.me/
+  • (escribe solo si es necesario) 
+▢ GitHub :
+  • https://github.com/FG98F
 ▢ Telegram : 
-  • t.me/fgsupp_bot 
+  • t.me/fgsupp_bot (FG) 
   • t.me/fg98ff (canal)
   • t.me/fgawgp (grupo)
 ▢ Facebook : 
@@ -19,10 +21,13 @@ function handler(m) {
 ▢ YouTube : 
   • https://youtube.com/fg98f
   
-  *≡ HELPER*
+ *≡ HELPERS*
   *CRISS*
 ▢ Instagram : https://www.instagram.com/sayurizuniga3
 ▢ WhatsApp : wa.me/
+  *ANDREA*
+▢ Instagram : https://
+▢ WhatsApp : wa.me/573125484672
 `) 
 
 
