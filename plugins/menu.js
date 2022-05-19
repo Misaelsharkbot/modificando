@@ -35,7 +35,7 @@ const defaultMenu = {
 ▢ Crea tu propio bot 
 • https://youtu.be/jeXHB0IIzCM
 ▢ Descarga *FGWhatsApp*
-• https://fg98.epizy.com
+• https://fgwhatsapp.ml
 ─────────────
 %readmore
 Ⓟ = Premium
@@ -158,10 +158,10 @@ const pp = await (await fetch('https://i.ibb.co/qMG1JPY/fg.jpg')).buffer()
     throw e
   }
 }
-handler.help = ['menu']
+handler.help = ['help']
 handler.tags = ['main']
 handler.command = ['menu', 'help', 'menú'] 
-handler.register = false
+handler.register = true
 handler.exp = 3
 
 export default handler
